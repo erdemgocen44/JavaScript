@@ -1,4 +1,4 @@
-//==Fonksiyonlar=====
+//todo==Fonksiyonlar=====
 
 //! 1.YÖNTEM FUNCTİON DECLARATION YONTEMİ
 //Bu yöntem ile fonksiyonun tanımlanması vcağırılmasından once veya sonra olabilir
@@ -9,7 +9,7 @@ function yazdirAd() {
     console.log("Erdem");
 }
 
-//fonksiyonun  çağırılması
+//todo fonksiyonun  çağırılması
 
 yazdirAd();
 
@@ -28,7 +28,7 @@ const tekCift1 = function(sayi) {
 };
 console.log(tekCift1(6));
 
-//ornek2 verilen 3 sayidan buyuk olanını bulma
+//todo ornek2 verilen 3 sayidan buyuk olanını bulma
 
 let buyukBul = function(a, b, c) {
     let enBuyuk;
@@ -43,3 +43,20 @@ let buyukBul = function(a, b, c) {
 };
 
 console.log(buyukBul(5, 1, 9));
+
+//! ÜÇÜNCÜ YÖNTEM====>>>>>>
+
+//todo ARROW YÖNTEMİ====>>>> ok fonksiyon
+
+const ciftMi = (sayi) => (sayi % 2 == 0 ? "çift" : "tek");
+
+console.log(ciftMi(12));
+
+//! Us alma orneği
+
+const taban = prompt("taban sayısı giriniz : ");
+const us = prompt("us giriniz");
+
+const usAl = (taban, us) => taban ** us;
+
+console.log(usAl(taban, us));

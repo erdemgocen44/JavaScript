@@ -1,46 +1,49 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <title class="arama">DOM Manipule</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dom örnek</title>
 </head>
 
 <body>
     <main>
+        <!-- ana içerik -->
         <div class="container text-center">
-            <h1 class="">Örnekler</h1>
-            <img src="img/img2.jpg" alt="" class="resim" />
+            <h1>Ornekler</h1>
+            <img class="resim" src="img/img2.jpg" alt="" />
 
-            <div class="mt-3">
-                <audio src="img/retro-ringtone .mp3" controls class="ses"></audio>
-                <button class="btn on btn-outline-warning me-2">Ara</button>
-                <button class="btn off btn-outline-primary me-2">Bağlat</button>
-                <button class="btn speak btn-outline-success me-2">Konuş</button>
+            <div class="mt-4">
+                <audio class="ses" src="img/retro-ringtone .mp3" style="width: 0" controls=""></audio>
+
+                <button class="btn on btn-outline-warning">Ara</button>
+                <button class="btn off btn-outline-primary">Baglat</button>
+                <button class="btn speak btn-outline-danger">Konus</button>
             </div>
-            <div class="input-div mt-3">
+
+            <div class="input-div mt-5">
                 <label for="textbox">Bir şeyler yazınız</label>
                 <input class="textbox" type="text" value="" />
 
-                <label for="checkbox">küçük/BÜYÜK</label>
+                <label for="checkbox">kücük/büyük</label>
                 <input class="checkbox" type="checkbox" />
             </div>
+            <p class="forH1"></p>
             <ul class="liste text-start">
-                <li>JavaScript</li>
-                <li>Dart</li>
-                <li>Flutter</li>
+                <li>Javascript</li>
                 <li>Java</li>
-                <li>Lambda</li>
+                <li>Phyton</li>
+                <li>SQL</li>
+                <li>C++</li>
             </ul>
 
-            <div class="text-start mt-3">
+            <div class="text-start mt-5">
                 <input class="dil me-1" type="text" />
-                <button class="btn ekle btn-success me-2">Ekle</button>
-                <button class="btn sil btn-danger me-1">Sil</button>
+                <button class="btn ekle btn-success">Ekle</button>
+                <button class="btn sil btn-danger">Sil</button>
             </div>
         </div>
     </main>

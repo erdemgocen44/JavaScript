@@ -41,6 +41,8 @@ document.querySelector(".sil").onclick = function() {
 const paragraf = document.querySelector(".forH1");
 paragraf.innerHTML = `<h1>${"Programlama Dilleri"}</h1>`;
 
+//todo setatribute metodu
+
 //! Klavyeden bir tuşa basıldığında büyüsün-küçülsün
 
 document.querySelector(".textbox").onkeyup = function() {

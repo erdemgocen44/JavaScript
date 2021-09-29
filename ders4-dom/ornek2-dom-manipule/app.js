@@ -41,7 +41,9 @@ document.querySelector(".sil").onclick = function() {
 const paragraf = document.querySelector(".forH1");
 paragraf.innerHTML = `<h1>${"Programlama Dilleri"}</h1>`;
 
-//todo setatribute metodu
+//todo setatribute metodu*******************
+
+//! document.querySelector(".checkbox").setAttribute("type", "checkbox");
 
 //! Klavyeden bir tuşa basıldığında büyüsün-küçülsün
 

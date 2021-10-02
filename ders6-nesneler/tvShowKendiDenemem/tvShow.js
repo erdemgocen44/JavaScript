@@ -18,12 +18,12 @@ function showIzle(showListe) {
             liste.innerHTML +
             `<div class="card col-md-3"  >
         <img class="card-img-top" src="${
-          a.show.image ? a.show.image.medium : ""
+          a._embedded.show.image ? a._embedded.show.image.medium : ""
         }" alt="Card image cap">
         <div class="card-body">
-          <h5>${a.show.name}</h5>
+          <h5>${a._embedded.show.name}</h5>
           <a href=${
-            a.show.url
+            a._embedded.show.url
           }target="_blank" class="btn btn-success">Detaylar</a>
         </div>
       </div>`;

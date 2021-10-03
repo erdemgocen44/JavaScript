@@ -1,32 +1,186 @@
 * {
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
 
 body {
-    background-color: white;
+    background-color: #fff;
 }
 
 .main-content {
     margin: 0 5%;
     width: 90%;
     height: 100vh;
-    background-color: #F89B1A;
+    background-color: #efefefef;
 }
 
 .main-nav {
+    position: fixed;
     height: 100px;
     width: 90%;
     margin: 0 5%;
-    background-color: #fff;
-    position: fixed;
     padding: 5px;
+    z-index: 2;
+    background-color: #fff;
 }
 
 .left-menu {
-    position: absolute;
+    position: fixed;
     height: 100vh;
+    background-color: #fff;
     width: 5%;
-    background-color: #2ec4b6;
     left: 0;
+    z-index: 3;
+}
+
+.left-main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    width: 400px;
+    transition: 400ms;
+    height: 100vh;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(2, 128, 144, 0.9);
+    -webkit-box-shadow: 12px 0px 25px -10px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 12px 0px 25px -10px rgba(0, 0, 0, 1);
+    box-shadow: 12px 0px 25px -10px rgba(0, 0, 0, 1);
+}
+
+.left-main-menu-active {
+    left: 5%;
+    visibility: visible;
+    opacity: 1;
+    z-index: 4;
+}
+
+.left-main-menu ul {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left-main-menu ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.left-main-menu a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-social-icon {
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+.nav-social-icon ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav-social-icon ul li {
+    padding: 4px;
+}
+
+.nav-social-icon ul a {
+    text-decoration: none;
+}
+
+.nav-social-icon .fab {
+    color: #028090;
+    font-size: 24px;
+    transition: 0.1s;
+}
+
+.nav-social-icon .fab:hover {
+    color: #f55b69;
+    font-size: 28px;
+}
+
+.left-menu a {
+    text-decoration: none;
+}
+
+.hamburger {
+    color: #028090;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 36px;
+    transform: translate(-50%, -50%);
+    transition: 300ms;
+}
+
+.hamburger:hover {
+    font-size: 44px;
+    color: #028090;
+}
+
+
+/* slider */
+
+.carousel-item {
+    min-height: 300px;
+    background: no-repeat center center none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.carousel-caption {
+    bottom: 30%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.carousel-caption h5 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    top: 2rem;
+}
+
+.slider-btn {
+    margin-top: 30px;
+}
+
+.slider-btn .btn-1 {
+    background-color: #028090;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    width: 100px;
+    transition: background-color 400ms;
+}
+
+.slider-btn .btn-1:hover {
+    background-color: transparent;
+    border-color: #f55b69;
+    color: #f55b69;
 }

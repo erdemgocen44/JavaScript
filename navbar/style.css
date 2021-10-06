@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #efefef;
+  }
+  .logo {
+    margin: 30px 0px 30px 80px;
+    border-radius: 30px;
+  }
+  nav {
+    background-color: lightslategrey;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    font-family: sans-serif;
+  }
+  .nav-links {
+    display: flex;
+    /*  background-color: maroon; */
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 7%;
+  }
+  .nav-links li {
+    list-style: none;
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .nav-links a:hover,
+  .fas:hover,
+  .fa:hover {
+    color: rgb(34, 34, 59);
+    font-size: 18px;
+  }
+  .nav-social-icons {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    top: 10px;
+  }
+  .nav-social-icons li {
+    list-style: none;
+  }
+  .nav-social-icons a {
+    color: white;
+    letter-spacing: 10px;
+    font-size: 20px;
+  }
+  .nav-social-icons .fab:hover {
+    color: rgb(34, 34, 59);
+  }
+  /* Burger menu ortaya cıkarma */
+  .burger div {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .burger {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    left: 20px;
+  }
+
+ 
+
+  @media screen and (max-width:1130){
+      .nav-links{
+          width: 60%;
+      }
+      @media screen and (max-width:768){
+          body{
+              overflow-x: hidden;
+          }
+          .nav-links{
+              position: absolute;
+              left: 0px;
+              background-color: violet;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 40%;
+              transform: translate(-400px);
+              transition: transform 0.7s ease-in;
+          }
+        }
+        .burger{
+            display: block;
+        }
+      
+        .nav-links li{
+            opacity: 0;
+        }
+        .nav-active{
+            transform :translate(0%);
+        }
+        .burger:hover{
+            transform: rotate(90deg);
+        }
+        @keyframes navLinkFade{
+            from{
+                opacity: 0;
+                transform: translate(50px);
+            }
+            to{
+                opacity: 1;
+                transform: translate(0px);
+            }
+        }
+  }
+
+  .toogle .satir1,.satir2,.satir3{
+      transform: rotate();
+  }
+
+

@@ -1,0 +1,39 @@
+*{
+    margin-top: 0;
+}
+body{
+    background-color: pink;
+}
+
+#chart{
+    margin-top: 5rem;
+}
+
+.myText{
+    color: rgb(158, 108, 47);
+}
+.cancel{
+    position: absolute;
+    right: 30px;
+    font-size: 1.5rem;
+}
+
+.cancel:hover{
+    cursor: pointer;
+    transform: rotateX(50deg);
+}
+
+.myButton{
+    background-color: rgb(10, 10, 78);
+}
+
+h1{
+    color: blue;
+    text-align: center;
+    text-shadow: 2px 2px 15px rgb(58, 7, 7);
+    cursor: pointer;
+}
+
+h1:hover{
+    color: orchid;
+}
